@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from random import randint
 uncoded = input("enter message. \n")
 Binary = {'1':'00110001','2':'00110010','3':'00110011','4':'00110100',
@@ -62,3 +63,20 @@ encode(Binary, uncoded, zero, one)
 
 #move(desk1,desk2)
 #print(f"{storage}{desk1(0)}")
+=======
+def recurseforever(x):
+    def recurse(x)
+        print(x)
+        x = x + 1
+    print(x)
+    x = x + 1
+    recurseforever(x)
+#recurseforever(0)
+desk1 = []
+desk2 = []
+Storage = "C:\Users\XLHS\OneDrive\Desktop\altdesk"
+temp = "C:\Users\XLHS\OneDrive\Desktop\Temp"
+import shutil
+#shutil.move("path/to/current/file.foo", "path/to/new/destination/for/file.foo")
+shutil.move("C:\Users\XLHS\OneDrive\Desktop\altdesk\test.txt", "C:\Users\XLHS\OneDrive\Desktop\Temp")
+>>>>>>> f9b052303d945f1b54a845403886905e2921e57d

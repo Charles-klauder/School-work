@@ -2,7 +2,7 @@ from random import randint
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 #======================================
 #Binary Dictionaries
-BinarytoChar = {
+ChartoBinary = {
           '1':'00110001','2':'00110010','3':'00110011','4':'00110100',
           '5':'00110101','6':'00110110','7':'00110111','8':'00111000',
           '9':'00111001','0':'00110000',
@@ -14,9 +14,9 @@ BinarytoChar = {
           'q':'01110001','r':'01110010','s':'01110011','t':'01110100',
           'u':'01110101','v':'01110110','w':'01110111','x':'01111000',
           'y':'01111001','z':'01111010','~':'01111110',' ':'00100000'}
-ChartoBinary = {}
-for k, v in BinarytoChar.items():
-    ChartoBinary[v] = k
+BinarytoChar = {}
+for k, v in ChartoBinary.items():
+    BinarytoChar[v] = k
 #======================================
 #encoder
 def encode(binary, uncoded, zero, one):
@@ -70,7 +70,7 @@ while action == "while":
         for letter in alphabet:
             if letter not in zero:
                 one += letter
-        coded = (encode(BinarytoChar, uncoded, zero, one))
+        coded = (encode(ChartoBinary, uncoded, zero, one))
         print(coded)
         action = "while"
     elif (action == "Decode") or (action == "decode"):
@@ -80,7 +80,7 @@ while action == "while":
         for letter in alphabet:
             if letter not in zero:
                 one += letter
-        decoded = (decode(ChartoBinary, encoded, zero, one))
+        decoded = (decode(BinarytoChar, encoded, zero, one))
         print(decoded)
         action = "while"
     elif (action == "Stop") or (action =="stop"):
